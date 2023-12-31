@@ -1,6 +1,6 @@
 .env
 /.cache
 /build
+/node_modules
 /public/build
-node_modules
 pnpm-lock.yaml
