@@ -5,7 +5,7 @@ const OFF = 0;
 // const WARN = 1;
 const ERROR = 2;
 
-/** @type {import("eslint").Linter.Config} */
+/** @type {import('eslint').Linter.Config} */
 module.exports = {
   root: true,
   env: {
@@ -28,13 +28,13 @@ module.exports = {
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
-    project: ['./tsconfig.json', './tsconfig.eslint.json'],
-    tsconfigRootDir: __dirname,
-    ecmaVersion: 'latest',
-    sourceType: 'module',
     ecmaFeatures: {
       jsx: true,
     },
+    ecmaVersion: 'latest',
+    project: ['./tsconfig.json', './tsconfig.eslint.json'],
+    sourceType: 'module',
+    tsconfigRootDir: __dirname,
   },
   plugins: ['@typescript-eslint', 'simple-import-sort', 'import'],
   settings: {
@@ -57,6 +57,7 @@ module.exports = {
     'import/first': ERROR,
     'import/newline-after-import': ERROR,
     'import/no-duplicates': ERROR,
+    'jsx-a11y/anchor-has-content': [ERROR, { components: ['Link', 'NavLink'] }],
     'react/jsx-no-leaked-render': [ERROR, { validStrategies: ['ternary'] }],
     'simple-import-sort/exports': ERROR,
     'simple-import-sort/imports': ERROR,
