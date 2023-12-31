@@ -18,8 +18,8 @@ dependencies:
     specifier: ^2.4.1
     version: 2.4.1(typescript@5.3.3)
   isbot:
-    specifier: ^3.6.8
-    version: 3.7.1
+    specifier: ^4.1.0
+    version: 4.1.0
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -32,25 +32,25 @@ devDependencies:
     specifier: ^2.4.1
     version: 2.4.1(@remix-run/serve@2.4.1)(typescript@5.3.3)
   '@types/react':
-    specifier: ^18.2.20
+    specifier: ^18.2.46
     version: 18.2.46
   '@types/react-dom':
-    specifier: ^18.2.7
+    specifier: ^18.2.18
     version: 18.2.18
   '@typescript-eslint/eslint-plugin':
-    specifier: ^6.7.4
+    specifier: ^6.16.0
     version: 6.16.0(@typescript-eslint/parser@6.16.0)(eslint@8.56.0)(typescript@5.3.3)
   eslint:
-    specifier: ^8.38.0
+    specifier: ^8.56.0
     version: 8.56.0
   eslint-config-prettier:
-    specifier: ^9.0.0
+    specifier: ^9.1.0
     version: 9.1.0(eslint@8.56.0)
   eslint-plugin-import:
-    specifier: ^2.28.1
+    specifier: ^2.29.1
     version: 2.29.1(@typescript-eslint/parser@6.16.0)(eslint@8.56.0)
   eslint-plugin-jsx-a11y:
-    specifier: ^6.7.1
+    specifier: ^6.8.0
     version: 6.8.0(eslint@8.56.0)
   eslint-plugin-react:
     specifier: ^7.33.2
@@ -65,7 +65,7 @@ devDependencies:
     specifier: ^2.4.8
     version: 2.4.8(prettier@3.1.1)
   typescript:
-    specifier: ^5.1.6
+    specifier: ^5.3.3
     version: 5.3.3
 
 packages:
@@ -3488,9 +3488,9 @@ packages:
     resolution: {integrity: sha512-xHjhDr3cNBK0BzdUJSPXZntQUx/mwMS5Rw4A7lPJ90XGAO6ISP/ePDNuo0vhqOZU+UD5JoodwCAAoZQd3FeAKw==}
     dev: true
 
-  /isbot@3.7.1:
-    resolution: {integrity: sha512-JfqOaY3O1lcWt2nc+D6Mq231CNpwZrBboLa59Go0J8hjGH+gY/Sy0CA/YLUSIScINmAVwTdJZIsOTk4PfBtRuw==}
-    engines: {node: '>=12'}
+  /isbot@4.1.0:
+    resolution: {integrity: sha512-Kz7zk1wc0oC0FYLYtqea1RKdEX4XGlqacPhoaq9HSEQamEXQNJ/MzVzBKAQXDCCHO0h/eo4CdZs9t3Jfbup5Aw==}
+    engines: {node: '>=18'}
     dev: false
 
   /isexe@2.0.0:
