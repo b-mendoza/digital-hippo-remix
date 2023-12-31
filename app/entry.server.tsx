@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/promise-function-async */
+
 /**
  * By default, Remix will handle generating the HTTP Response for you.
  * You are free to delete this file if you'd like to, but if you ever want it revealed again, you can run `npx remix reveal` ✨
@@ -5,6 +7,7 @@
  */
 
 import { PassThrough } from 'node:stream';
+
 import type { EntryContext } from '@remix-run/node';
 import { createReadableStreamFromReadable } from '@remix-run/node';
 import { RemixServer } from '@remix-run/react';

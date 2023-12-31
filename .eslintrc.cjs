@@ -36,7 +36,7 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: ['@typescript-eslint'],
+  plugins: ['@typescript-eslint', 'simple-import-sort', 'import'],
   settings: {
     react: {
       version: 'detect',
@@ -54,7 +54,12 @@ module.exports = {
       { fixStyle: 'separate-type-imports' },
     ],
     '@typescript-eslint/explicit-function-return-type': OFF,
+    'import/first': ERROR,
+    'import/newline-after-import': ERROR,
+    'import/no-duplicates': ERROR,
     'react/jsx-no-leaked-render': [ERROR, { validStrategies: ['ternary'] }],
+    'simple-import-sort/exports': ERROR,
+    'simple-import-sort/imports': ERROR,
   },
   overrides: [
     {
