@@ -1,6 +1,5 @@
 .env
 *.tsbuildinfo
-/.cache
 /build
 /node_modules
 /public/build

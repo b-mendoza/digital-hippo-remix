@@ -1,6 +1,5 @@
 .env
 *.tsbuildinfo
-/.cache
 /.vscode
 /build
 /node_modules
