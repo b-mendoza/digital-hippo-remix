@@ -8,10 +8,21 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 
+import inter from '~/assets/fonts/inter-latin-wght-normal.woff2';
+import fontStyles from '~/styles/fonts.styles.css';
 import globalStyles from '~/styles/globals.styles.css';
 
 export const links: LinksFunction = () => [
+  {
+    rel: 'preload',
+    href: inter,
+    as: 'font',
+    type: 'font/woff2',
+    crossOrigin: 'anonymous',
+  },
+  { rel: 'preload', href: fontStyles, as: 'style' },
   { rel: 'preload', href: globalStyles, as: 'style' },
+  { rel: 'stylesheet', href: fontStyles },
   { rel: 'stylesheet', href: globalStyles },
 ];
 
