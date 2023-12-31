@@ -3,5 +3,5 @@
 export default {
   '*': 'prettier --ignore-unknown --write',
   '*.{js,ts,tsx}': 'eslint --fix',
-  '*.ts?(x)': () => 'tsc -p ./tsconfig.json --force --noEmit',
+  '*.ts?(x)': () => 'tsc -p ./tsconfig.json --incremental false',
 };
