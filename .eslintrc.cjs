@@ -1,8 +1,8 @@
-/**
- * This is intended to be a basic starting point for linting in your app.
- * It relies on recommended configs out of the box for simplicity, but you can
- * and should modify this configuration to best suit your team's needs.
- */
+// Severity Types
+// const OFF = 0;
+const WARN = 1;
+const ERROR = 2;
+// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
 /** @type {import('eslint').Linter.Config} */
 module.exports = {
@@ -33,6 +33,7 @@ module.exports = {
         'plugin:react/jsx-runtime',
         'plugin:react-hooks/recommended',
         'plugin:jsx-a11y/recommended',
+        'prettier',
       ],
       settings: {
         react: {
@@ -43,6 +44,9 @@ module.exports = {
           { name: 'Link', linkAttribute: 'to' },
           { name: 'NavLink', linkAttribute: 'to' },
         ],
+      },
+      rules: {
+        'react/jsx-no-leaked-render': [WARN, { validStrategies: ['ternary'] }],
       },
     },
 
@@ -64,16 +68,20 @@ module.exports = {
       },
       extends: [
         'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/stylistic',
         'plugin:import/recommended',
         'plugin:import/typescript',
+        'prettier',
       ],
-    },
-
-    // Node
-    {
-      files: ['.eslintrc.js'],
-      env: {
-        node: true,
+      rules: {
+        'import/order': [
+          ERROR,
+          {
+            alphabetize: { caseInsensitive: true, order: 'asc' },
+            groups: ['builtin', 'external', 'internal', 'parent', 'sibling'],
+            'newlines-between': 'always',
+          },
+        ],
       },
     },
   ],
