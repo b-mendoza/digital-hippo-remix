@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": true,
+    "types": ["@types/node"]
+  },
+  "extends": "./tsconfig.json",
+  "include": [".eslintrc.cjs"]
+}
