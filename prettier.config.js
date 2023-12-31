@@ -4,4 +4,5 @@
 export default {
   singleQuote: true,
   plugins: ['prettier-plugin-packagejson', 'prettier-plugin-tailwindcss'],
+  tailwindFunctions: ['cn'],
 };
