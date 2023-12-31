@@ -7,9 +7,12 @@
     "build": "remix build",
     "dev": "remix dev --manual",
     "fix": "concurrently --kill-others-on-fail --prefix-colors \"auto\" \"npm:fix:*\"",
+    "fix:eslint": "eslint --cache --cache-location ./node_modules/.cache/eslint --fix .",
     "fix:prettier": "prettier --ignore-unknown --cache --write .",
     "lint": "concurrently --prefix-colors \"auto\" \"npm:lint:*\"",
+    "lint:eslint": "eslint --cache --cache-location ./node_modules/.cache/eslint .",
     "lint:prettier": "prettier --ignore-unknown --cache --check .",
+    "lint:types": "tsc --pretty",
     "start": "remix-serve ./build/index.js",
     "typecheck": "tsc"
   },
