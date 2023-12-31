@@ -11,8 +11,7 @@
     "lint:biome": "biome check .",
     "lint:types": "tsc --pretty",
     "prepare": "husky install",
-    "start": "remix-serve ./build/index.js",
-    "typecheck": "tsc"
+    "start": "remix-serve ./build/index.js"
   },
   "dependencies": {
     "@remix-run/css-bundle": "2.4.1",
