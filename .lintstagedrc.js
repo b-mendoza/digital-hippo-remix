@@ -1,3 +1,3 @@
 export default {
-  '*': ['prettier --ignore-unknown --write', 'biome check'],
+  '*': 'prettier --ignore-unknown --write',
 };
