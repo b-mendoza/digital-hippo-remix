@@ -8,11 +8,11 @@ import {
   ScrollRestoration,
 } from '@remix-run/react';
 
-import stylesheet from '~/tailwind.css';
+import globalStyles from '~/styles/globals.styles.css';
 
 export const links: LinksFunction = () => [
-  { rel: 'preload', as: 'style', href: stylesheet },
-  { rel: 'stylesheet', href: stylesheet },
+  { rel: 'preload', href: globalStyles, as: 'style' },
+  { rel: 'stylesheet', href: globalStyles },
 ];
 
 export default function App() {
