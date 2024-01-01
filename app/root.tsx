@@ -35,8 +35,13 @@ export default function App() {
         <Meta />
         <Links />
       </head>
-      <body>
-        <Outlet />
+      <body className="flex min-h-screen flex-col antialiased">
+        <main className="flex flex-grow flex-col">
+          <Outlet />
+        </main>
+
+        {/* <footer>Hello World</footer> */}
+
         <ScrollRestoration />
         <Scripts />
         <LiveReload />
