@@ -1,5 +1,7 @@
 import type { MetaFunction } from '@remix-run/node';
 
+import { MaxWidthWrapper } from '~/components/max-width-wrapper';
+
 export const meta: MetaFunction = () => {
   return [
     { title: 'New Remix App' },
@@ -9,33 +11,13 @@ export const meta: MetaFunction = () => {
 
 export default function Index() {
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.8' }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
+    <MaxWidthWrapper>
+      <div className="mx-auto flex max-w-3xl flex-col items-center py-20 text-center">
+        <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+          Your market place for high-quality{' '}
+          <span className="text-blue-600">digital assets</span>.
+        </h1>
+      </div>
+    </MaxWidthWrapper>
   );
 }
