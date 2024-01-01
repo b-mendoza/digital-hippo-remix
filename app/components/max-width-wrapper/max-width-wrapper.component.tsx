@@ -1,6 +1,6 @@
 import { cn } from '~/lib/utils';
 
-type MaxWidthWrapperProps = React.JSX.IntrinsicElements['div'];
+type MaxWidthWrapperProps = React.HTMLAttributes<HTMLDivElement>;
 
 export const MaxWidthWrapper = (props: MaxWidthWrapperProps) => {
   const { children, className, ...restOfProps } = props;
